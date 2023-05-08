@@ -1,0 +1,198 @@
+.header{
+ height: 60px;  
+ 
+ display: flex;
+ flex-direction: row;
+
+ justify-content: space-between;
+
+
+/* position FIX */
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+
+  background-color: white;
+
+/* BOTTOM BORDER */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color:rgb(237, 234, 234);
+
+/* z index */
+    z-index: 100;
+}
+
+
+.search-bar{
+    flex: 1;
+    height: 38px;
+    padding-left: 10px;
+    font-size:16px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+
+    border-radius: 2px;
+/* for shadow inside rather than outside */
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.05);
+
+/* remove default widht */
+    width: 0;
+}
+
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+
+.left-section{
+    display: flex;
+    /* background-color: lightblue; */
+    /* width: 150px; */
+    margin-right: 55px;
+    align-items: center;
+}
+
+.middle-section{
+    flex: 1;
+    /* background-color: lightcoral; */
+    margin-right: 35px;
+/* limit the width of flex */
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.right-section{
+    width: 180px;
+    /* background-color: lightpink; */
+
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 100px;
+    margin-right: 20px;
+
+/* PREVENT SHRINKING */
+    flex-shrink: 0;
+
+}
+
+.icon1{
+    height: 26px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.icon2{
+    height: 22px;
+}
+
+.search-button{
+    height: 42px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+
+
+    margin-left: -1px;
+
+    margin-right:10px;
+    cursor: pointer;
+
+}
+
+.search-button, .voice-search-button, .icon5-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.search-button .tooltip, .voice-search-button .tooltip, .icon5-container .tooltip{
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+
+/* DISABLE HOVER OVER TOOLTIP AND ONLY ALLOW HOVER OVER BUTTON*/
+    pointer-events: none;
+
+
+/* TO PREVENT WRAPPING AROUND OF TEXT*/
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip, .voice-search-button:hover .tooltip, .icon5-container:hover .tooltip{
+    opacity: 1;
+}
+
+.voice-search-button{
+    height: 42px;
+    width: 40px;
+
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.icon3{
+    height: 25px;
+    /* margin-top: 4px; */
+}
+
+.icon4{
+    height: 24px;
+    /* margin-top: 7px; */
+}
+
+.icon5, .icon6, .icon7{
+    height: 27px;
+    cursor: pointer;
+}
+
+.notifications-icon-container{
+    position: relative;
+}
+
+.notifications-count{
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background-color: rgb(188, 22, 22);
+    color: white;
+    border-radius: 10px;
+
+    font-family: roboto, Arial;
+    font-size: 11px;
+    padding-right: 5px;
+    padding-left: 5.5px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+}
+
+.icon8{
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}

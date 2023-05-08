@@ -1,0 +1,103 @@
+.thumbnail{
+    display: block;
+    width: 100%;
+    /* width: 300px; */
+    /* height: 300px;
+    object-fit: contain; 
+    contains the image in 300 x 300 area. we can also use cover
+    object-position: center;*/
+}
+
+
+.video-title{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.video-author, .video-stats{
+    font-size: 12px;
+    color: rgb(96,96,96);
+}
+
+.video-author{
+    margin-bottom: 5px;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+/* MEDIA QUERY */
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+
+.channel-pic{
+/* DON'T NEED TO USE AS WE ARE USING GRID NOW( WITH GRID WE DON'T GET SPACES BETWEEN THE INLINE BLOCKS)*/
+    /* display: inline-block;
+    width: 40px;
+    vertical-align: top; */
+    margin-right: 8px;
+}
+
+.video-info{
+    /* display: inline-block;
+    width: 200px; */
+    vertical-align: top;
+}
+
+.profile-pic{
+    width: 100%; /* i.e. it will take 100% of its container*/
+    border-radius: 100px;
+}
+
+.thumbnail-row{
+    margin-bottom:8px;
+    position: relative;
+}
+
+
+.video-time{
+    font-family: roboto, Arial;
+    font-size: 12px;
+
+
+/* PADDING SHORTCUT */
+    padding: 3px 4px;
+    /* 3px = top/bottom and 4px = left/right */
+/* or */
+/* padding: 3px 4px 3px 4px*/
+/* top right bottom left (start clock wise from top) */
+/* similarly we can use this shortcut for margin */
+    border-radius: 2px;
+
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Youtube.com Clone</title>
+        <link rel="stylesheet" href = "styles/video.css">
+        <link rel="stylesheet" href = "styles/header.css">
+        <link rel="stylesheet" href = "styles/general.css">
+        <link rel="stylesheet" href = "styles/sidebar.css">
+
+<!-- load robota font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    </head>
+
+<!-- SEMENTIC ELEMENTS: NAV HEADER MAIN SECTION(like div except they give special meaning and structure for search engines and screen readers) -->
+    <body>
+<!-- SIDEBAR -->
+        <nav class = "sidebar">
+            <div class = "sidebar-link">
+                <img src = "Sidebar/home.svg">
+                <div>Home</div>
+            </div>
+            <div class = "sidebar-link">
+                <img src = "Sidebar/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class = "sidebar-link">
+                <img src = "Sidebar/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class = "sidebar-link">
+                <img src = "Sidebar/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class = "sidebar-link">
+                <img src = "Sidebar/youtube-music.svg">
+                <div>YouTube Music</div>
+            </div>
+            <div class = "sidebar-link">
+                <img src = "Sidebar/library.svg">
+                <div>Library</div>
+            </div>
+        </nav>
+<!-- HEADER -->
+        <header class = "header">
+            <div class = "left-section">
+                <img src = "Icons/icon1.svg" class = "icon1">
+                <img src = "Icons/icon2.svg" class = "icon2">
+            </div>
+
+            <div class = "middle-section">
+                <!-- for search box : VOID  -->
+                <input type = "search-bar" placeholder = "Search" class = "search-bar">
+                <!-- we can use checkbox too --> 
+
+                <button class = "search-button">
+                    <img src = "Icons/icon3.svg" class = "icon3">
+                    <div class = "tooltip">Search</div>
+                </button>
+
+                <button class = "voice-search-button">
+                    <img src = "Icons/icon4.svg" class = "icon4">
+                    <div class = "tooltip">Search with your voice</div>
+                </button>
+            </div>
+
+            <div class = "right-section">
+                <div class = "icon5-container">
+                    <img  src = "Icons/icon5.svg" class = "icon5"> 
+                    <div class = "tooltip">Create</div>
+                </div>
+
+                <div class = "icon5-container">
+                    <img src = "Icons/icon6.svg" class = "icon6">
+                    <div class = "tooltip">YouTube apps</div>
+                </div>
+
+<!-- to add absolute under relative position for notification badge -->
+
+                <div class = "icon5-container">
+                    <div class = "notifications-icon-container">
+                        <img src = "Icons/icon7.svg" class = "icon7">
+    
+                        <div class = "notifications-count">3</div>
+                    </div>
+                    <div class = "tooltip">Notifications</div>
+                </div>
+                
+                <div class = "icon5-container">
+                    <img src = "Icons/icon8.jpeg" class = "icon8">
+                    <div class = "tooltip">YouTube apps</div>
+                </div>
+
+            </div>
+
+        </header>
+
+<!-- MAIN -->
+        <main>
+            <section class = "video-grid">
+            <!-- DIVISION 1 -->
+                <div class = "video-preview">
+                    <div class = "thumbnail-row">
+                        <!-- img is a VOID ELEMENT -->
+                        <img src="thumbnails/img1.webp" class = "thumbnail">
+        
+                        <div class = "video-time">14:20</div>
+                    </div>
+        
+        
+                    <div class = "video-info-grid">
+                        <div class = "channel-pic">
+                            <img class = "profile-pic" src = "ChannelPic/img1.jpg">
+                        </div>
+        
+                        <div class = "video-info">
+                            <p class = "video-title">ZARA Haul For Men Winter Edition | Men's Clothing Haul &...</p>
+                            <p class = "video-author">Feanshu and Keerat &#10003;</p>
+                            <p class = "video-stats">18K views &#183; 23 hours ago</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            <!-- DIVISION 2 -->
+                <div class = "video-preview">
+        
+                    <div class = "thumbnail-row">
+                        <img src="thumbnails/img2.webp" class = "thumbnail">
+        
+                        <div class = "video-time">30:20</div>
+                    </div>
+        
+                    <div class = "video-info-grid">
+                        <div class = "channel-pic">
+                            <img class = "profile-pic" src = "ChannelPic/img2.jpg">
+                        </div>
+        
+                        <div class = "video-info">
+                            <p class = "video-title">Zakir Khan | Jashn-e-Rekhta 2017</p>
+                            <p class = "video-author">Jashn-e-Rekhta &#10003;</p>
+                            <p class = "video-stats">7.2M views &#183; 5 years ago</p>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            <!-- DIVISION 3 -->
+                <div class = "video-preview">
+        
+                    <div class = "thumbnail-row">
+                        <img src="thumbnails/img3.webp" class = "thumbnail">
+        
+                        <div class = "video-time">6:34:20</div>
+                    </div>
+        
+                    <div class = "video-info-grid">
+                        <div class = "channel-pic">
+                            <img class = "profile-pic" src = "ChannelPic/img3.jpg">
+                        </div>
+        
+                        <div class = "video-info">
+                            <p class = "video-title">HTML & CSS Full Course - Beginner to Pro (2022)</p>
+                            <p class = "video-author">JSuperSimpleDev</p>
+                            <p class = "video-stats">2.7M views &#183; 10 months ago</p>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            <!-- DIVISION 4 -->
+                <div class = "video-preview">
+        
+                    <div class = "thumbnail-row">
+                        <img src="thumbnails/img4.webp" class = "thumbnail">
+        
+                        <div class = "video-time">14:20</div>
+                    </div>
+        
+                    <div class = "video-info-grid">
+                        <div class = "channel-pic">
+                            <img class = "profile-pic" src = "ChannelPic/img4.jpg">
+                        </div>
+        
+                        <div class = "video-info">
+                            <p class = "video-title">True Package of Amazon SDE1| Software Engineer</p>
+                            <p class = "video-author">Apna College &#10003;</p>
+                            <p class = "video-stats">39K views &#183; 17 hours ago</p>
+                        </div>
+                    </div>
+        
+                </div>
+                
+                
+            <!-- DIVISION 5 -->
+                <div class = "video-preview">
+        
+                    <div class = "thumbnail-row">
+                        <img src="thumbnails/img5.webp" class = "thumbnail">
+        
+                        <div class = "video-time">29:20</div>
+                    </div>
+        
+                    <div class = "video-info-grid">
+                        <div class = "channel-pic">
+                            <img class = "profile-pic" src = "ChannelPic/img5.jpg">
+                        </div>
+        
+                        <div class = "video-info">
+                            <p class = "video-title">How to get hired as Frontend Developer in 2022 ft. @akshaymarch7 | Learn Web Development | An...</p>
+                            <p class = "video-author">Anshika Gupta</p>
+                            <p class = "video-stats">1.7 lakh views &#183; 2 months ago</p>
+                        </div>
+                    </div>
+        
+                </div>
+                
+            <!-- DIVISION 6 -->
+                <div class = "video-preview">
+        
+                    <div class = "thumbnail-row">
+                        <img src="thumbnails/img6.jpg" class = "thumbnail">
+        
+                        <div class = "video-time">22:20</div>
+                    </div>
+        
+                    <div class = "video-info-grid">
+                        <div class = "channel-pic">
+                            <img class = "profile-pic" src = "ChannelPic/img6.jpg">
+                        </div>
+        
+                        <div class = "video-info">
+                            <p class = "video-title">The Bermuda Triangle Mystery | What is the Secret? | Dhruv Rathee</p>
+                            <p class = "video-author">Dhruv Rathee &#10003;</p>
+                            <p class = "video-stats">20M views &#183; 10 months ago</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+</html>
